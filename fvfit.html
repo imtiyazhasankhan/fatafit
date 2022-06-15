@@ -1,0 +1,113 @@
+<!-- initialize : 21_07_2021pH (Eid2)
+by : @xerxesXimen || imtiyaz -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Fatafit</title>
+</head>
+<body>
+    <nav>
+        <a href="#" id="top_name">Fatafit</a>
+        <div class="link_container">
+            <a href="#" class="nav_links active">Home</a>
+            <a href="contact.html" class="nav_links">Contact</a>
+            <a href="about.html" class="nav_links">About Us</a>
+        </div>
+
+        <!-- _____________________________Navbar for mobile_______________________________ -->
+        <button id="vertical_nav" type="button" class="collapsible"><a class="nav_links active">Home</a></button>
+        <div class="content" style="display: none;">
+            <a href="contact.html" class="nav_links">Contact</a>
+            <a href="about.html" class="nav_links">About Us</a>
+        </div>
+
+    </nav>
+    <div class="top_bar">
+        <h1 class="brand" id="brand_">Fatafit</h1>
+    </div>
+<!-- 
+    <div class="_welcome_">
+        <h1>Welcome to Fatafit</h1>
+    </div> -->
+
+    <div class="left_div" id="left_div">
+        <div class="op"> <!--- black translucent gradient effect on image --->
+            <div class="smooth_combine"></div> <!--- for making the gradiend effect in vertical center --->
+        </div>
+        <p class="ppp">If you think lifting is dangerous, try being weak</p>
+        <button id="join_" onclick="document.getElementById('scroll_for_join').scrollIntoView()">Join Now ></button>
+    </div>
+
+    <div class="right_div">
+        <button id="join" onclick="document.getElementById('scroll_for_join').scrollIntoView()">Join Now ></button>
+    </div>
+    <div class="contact_us">
+        <div class="btn0 btnl"></div>
+        <div class="btn1 btnl"></div>
+        <div class="btn2 btnl"></div>
+    </div>
+
+    <div class="lean_body">
+        <div class="lean_man">
+            <div class="bottom_gradient" style="position: absolute;
+            width: 100%; background: linear-gradient(#00000000, #000);
+            height: 50px; bottom: 0;
+            "></div>
+            <div class="bottom_gradient" style="position: absolute;
+            width: 20px; background: linear-gradient(90deg,#000,#0000007c,#00000000);
+            height: 100%; left: 0;
+            "></div>
+        </div>
+        <p id="scroll_for_join">fitness is not about only having a big muscles</p>
+    </div>
+    <!-- _______________________ user_information _________________________ -->
+
+    <div class="user_info" id="form">
+        <h1>Kindly fill the form</h1>    
+        <hr>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Please enter your name"><br><br>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Age / DOB"><br><br>
+        
+        <label for="phone">phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number"><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email address"><br><br>
+        
+        <button id="next_btn" type="submit" onclick="next()">Next</button>
+    </div>
+    
+    <div id="next">
+        <div class="pop_up">
+            <button id="close" onclick="close_()" >Go Back</button>
+            <h1 id="welcome"></h1>
+            <p>Congratulation, Now you are a member of our Gym. Good luck in your new position.You should be really happy and proud of your success
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="warm_up">
+        <div class="wimg"></div>
+        <p>“What seems impossible today will one day become your warm-up.” “Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.” “I don't count my sit-ups.</p>
+    </div>
+
+    <!-- ________________________Footer______________________ -->
+    <footer>
+        <ul style="width: fit-content; margin: auto">
+            <li>Made By Xerxes Ximen</li>
+            <li>Copyright @2021</li>
+            <li><a style="text-decoration: none; color: #ffffffb4;" href="https://www.instagram.com/xerxesximen/">Contact with Developer</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+<!-- last modified : 15 June 2022  -->

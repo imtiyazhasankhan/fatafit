@@ -1,0 +1,167 @@
+<!-- 28_July_2021pH 07:19 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact with Fatafit</title>
+</head>
+<style>
+    .sampark{
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        position: relative;
+        color: #ffffffea;
+        display: flex;
+        flex-wrap: no-wrap;
+    }
+    .contact{
+        background-color: #1f1f1f;
+        border-radius: 30px;
+        float: left;
+        width: 350px;
+        height: 200px;
+        margin: auto 20px;
+    }
+
+    .contact:first-child{ animation: scaleUp 1s;}
+    .contact:nth-child(2){ animation: scaleUp 2s;}
+    .contact:last-child{ animation: scaleUp 3s;}
+
+    .contact div{
+        background-size: contain;
+        width: 100%;
+        height: 50px;
+        margin: 30px auto;
+    }
+    .dailer{
+        background: url("https://i.ibb.co/SXQ9cDb/phone.png")center center no-repeat;
+    }
+    .email{
+        background: url("https://i.ibb.co/pRLWvdX/gmail.png")center center no-repeat;
+    }
+    .instagram{
+        background: url("https://i.ibb.co/VCV5kYY/instagram.png")center center no-repeat;
+    }
+    .contact h2{
+        width: fit-content;
+        margin: auto;
+    }
+
+    @keyframes scaleUp {
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    @media screen and (max-width: 1166px){
+        .contact{
+            width: 290px;
+        }
+    }
+    @media screen and (max-width: 969px){
+        .sampark{
+            flex-wrap: wrap;
+        }
+        .contact{
+            width: 90vw;
+            margin: 30px auto;
+        }
+    }
+    @media screen and (max-width: 292px){
+        .contact h2{
+            font-size: 20px;
+        }
+        .contact{
+            height: 170px;
+        }
+    }
+    @media screen and (max-width: 228px){
+        .contact h2{
+            font-size: 15px;
+        }
+        .contact{
+            height: 160px;
+        }
+    }
+    
+
+    @media screen and (max-width: 450px){
+        #brand_{
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (max-width: 290px){
+        #brand_{
+            font-size: 2rem;
+        }
+    }
+
+</style>
+<body>
+    <nav>
+        <a href="#" id="top_name">Fatafit</a>
+        <div class="link_container">
+            <a href="fvfit.html" class="nav_links">Home</a>
+            <a href="#" class="nav_links active">Contact</a>
+            <a href="about.html" class="nav_links">About Us</a>
+        </div>
+            <!-- ___________________________Navbar for mobile_______________________________ -->
+            <button id="vertical_nav" type="button" class="collapsible"><a class="nav_links active">Contact</a></button>
+            <div class="content" style="display: none;">
+                <a href="fvfit.html" class="nav_links">Home</a>
+                <a href="about.html" class="nav_links">About Us</a>
+            </div>
+    </nav>
+    <div class="top_bar">
+        <h1 class="brand" id="brand_">Contact Us</h1>
+    </div>
+    <div class="sampark">
+        <div class="contact" id="phone">
+            <div class="dailer"></div>
+            <h2>Call at 0179N1H70</h2>
+        </div>
+        <div class="contact" id="email">
+            <div class="email"></div>
+            <h2>fatafit@hangno.in</h2>
+        </div>
+        <div class="contact" id="instagram">
+            <div class="instagram"></div>
+            <h2>Follow on instagram</h2>
+        </div>
+    </div>
+
+    <!-- ________________________Footer______________________ -->
+    <footer>
+        <ul style="width: fit-content; margin: auto">
+            <li>Made By Imtiyaz</li>
+            <li>Copyright @2021</li>
+        </ul>
+    </footer>
+    
+</body>
+<script defer>
+    // ____________This code is for Navbar_____________ for mobile______________
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "none") {
+        content.style.display = "block";
+        } else {
+        content.style.display = "none";
+        }
+    });
+    }
+</script>
+</html>

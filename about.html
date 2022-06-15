@@ -1,0 +1,249 @@
+<!-- 28_July_2021pH 07:19 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Fatafit</title>
+</head>
+<style>
+    .top_bar_about {
+        width: 100vw;
+        height: 200px;
+        position: relative;
+        overflow: visible;
+    }
+
+    #about {
+        position: absolute;
+        padding: 0px 2px;
+        border-radius: 20px;
+        width: fit-content;
+        color: white;
+        left: 0;
+        right: 0;
+        top: 70px;
+        font-size: 4rem;
+        margin: auto;
+        animation: slideDown 3s;
+        z-index: 99;
+    }
+
+    .left_right {
+        width: 45%;
+        height: 95%;
+        background-color: #1a1a1a;
+        margin: auto;
+        border-radius: 30px;
+    }
+
+    ._left {
+        float: left;
+        background: url("https://i.ibb.co/GHrFjTB/leaves.jpg") center center no-repeat;
+        background-size: cover;
+        animation: scaleUp 0.9s linear;
+    }
+
+    ._right {
+        float: right;
+        background-color: #222222;
+        color: #fffffff6;
+        position: relative;
+        animation: scaleUp 1.8s linear;
+
+    }
+
+    .bottom_gradient {
+        width: 100%;
+        height: 45px;
+        background: linear-gradient(#00000000, #222222);
+        position: sticky;
+        bottom: 0;
+    }
+
+    ._right h2 {
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1.8rem;
+        max-width: 90%;
+    }
+
+    ._right p {
+        width: fit-content;
+        max-width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    @keyframes scaleUp {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        .left_right {
+            width: 47%;
+        }
+    }
+
+    .trash {
+        display: block;
+        max-width: 86.9%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .immi {
+        width: fit-content;
+        height: fit-content;
+        margin: 20px auto;
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 930px) {
+        .trash {
+            display: block;
+            position: relative;
+            color: white;
+        }
+
+        .left_right {
+            float: none;
+            width: 90%;
+            height: 300px;
+            margin: 30px auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .left_right {
+            width: 95%;
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .left_right {
+            z-index: 102;
+            height: 220px;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        #about {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        ._right h2 {
+            font-size: 25px;
+        }
+
+        ._right p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 310px) {
+        ._right h2 {
+            font-size: 19px;
+        }
+
+        ._right p {
+            font-size: 13px;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="#" id="top_name">Fatafit</a>
+        <div class="link_container">
+            <a href="fvfit.html" class="nav_links">Home</a>
+            <a href="contact.html" class="nav_links">Contact</a>
+            <a href="about.html" class="nav_links active">About Us</a>
+        </div>
+        <!-- ___________________________Navbar for mobile_______________________________ -->
+        <button id="vertical_nav" type="button" class="collapsible"><a class="nav_links active">About Us</a></button>
+        <div class="content" style="display: none;">
+            <a href="fvfit.html" class="nav_links">Home</a>
+            <a href="contact.html" class="nav_links">Contact</a>
+        </div>
+    </nav>
+    <div class="top_bar_about">
+        <h1 id="about">About Us</h1>
+    </div>
+
+    <div class="trash">
+        <div class="_left left_right" id="nh_bg"></div>
+        <h2 class="immi">Managed by HangNo</h2>
+        <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sapiente totam,
+            vitae tempore enim consequuntur molestias in sunt culpa eius velit perspiciatis quos amet optio porro
+            officiis possimus! Nulla harum illo eos quisquam quaerat officiis reprehenderit! Optio expedita mollitia
+            inventore eum necessitatibus? Ratione tenetur ullam cumque? Illo autem vero ipsum tempore. Odio, velit
+            placeat non enim facere necessitatibus minima, ad culpa corporis nam eos modi itaque neque? Harum, delectus.
+        </p>
+    </div>
+
+    <div class="trash">
+        <h2 class="immi">Made by Imtiyaz</h2>
+        <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sapiente totam,
+            vitae tempore enim consequuntur molestias in sunt culpa eius velit perspiciatis quos amet optio porro
+            officiis possimus! Nulla harum illo eos quisquam quaerat officiis reprehenderit! Optio expedita mollitia
+            inventore eum necessitatibus? Ratione tenetur ullam cumque? Illo autem vero ipsum tempore. Odio, velit
+            placeat non enim facere necessitatibus minima, ad culpa corporis nam eos modi itaque neque? Harum, delectus.
+        </p>
+    </div>
+
+
+
+    <!-- ________________________Footer______________________ -->
+    <footer>
+        <ul style="width: fit-content; margin: auto">
+            <li>All Right Reserve</li>
+            <li>Copyright @2021</li>
+        </ul>
+    </footer>
+</body>
+<script defer>
+    // ____________This code is for Navbar_____________ for mobile______________
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+    }
+
+    // hangNo_leaves = ()=>{
+    // }
+    setTimeout(() => {
+        document.getElementById("nh_bg").style.background = 'url("https://i.ibb.co/vhwXLXL/leaves.jpg") center center no-repeat'
+        document.getElementById("nh_bg").style.backgroundSize = 'cover'
+    }, 909);
+    setTimeout(() => {
+        document.getElementById("nh_bg").style.filter = 'grayscale(1)'
+    }, 1800);
+
+</script>
+
+</html>
